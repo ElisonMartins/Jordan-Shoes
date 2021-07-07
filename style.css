@@ -1,0 +1,112 @@
+/*Variáveis*/
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: var(--bgSite);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.head-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: var(--title);
+  color: var(--white);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+}
+
+.bg {
+  background: #4b3e3e;
+  color: var(--white);
+  width: 100%;
+  height: 380px;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/wallpaper.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.text {
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.destaques {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.destaques h1,
+.destaques p { 
+  margin: 10px 0;
+}  
