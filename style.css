@@ -36,11 +36,6 @@ img {
   display: block;
 }
 
-button:focus,
-input:focus {
-  border: 0;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -87,6 +82,11 @@ header {
   margin-left: 10%;
 }
 
+.text h1,
+.text p{
+  margin: 20px 0 0;
+}
+
 .destaques {
   display: flex;
   align-items: center;
@@ -102,15 +102,31 @@ header {
 }  
 
 .card {
-  height: 205px;
-  width: 205px;
+  height: 210px;
+  width: 210px;
   margin: 10px 3px ;
   background-color: var(--bgCard);
   float:left;
 }
 
 .card img {
+  transition: 1s;
   margin-top: 50px ;
+}
+
+.card .detalhes {
+  transition: 1s;
+  display: none;
+}
+
+.card:hover img {
+  transition: 1s;
+  margin-top: 0px;
+}
+
+.card:hover .detalhes {
+  transition: 1s;
+  display: block;
 }
 
 footer {
