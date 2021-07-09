@@ -104,7 +104,8 @@ header {
 .card {
   height: 210px;
   width: 210px;
-  margin: 10px 3px ;
+  margin: 5px 3px ;
+  border-radius: 5px;
   background-color: var(--bgCard);
   float:left;
 }
@@ -116,17 +117,41 @@ header {
 
 .card .detalhes {
   transition: 1s;
-  display: none;
+  opacity: 0;
 }
 
 .card:hover img {
   transition: 1s;
-  margin-top: 0px;
+  margin-top: -30px;
+  transform: rotate(-15deg);
 }
 
 .card:hover .detalhes {
-  transition: 1s;
-  display: block;
+  transition: 2s;
+  opacity: 1;
+}
+
+.detalhes h3,
+.detalhes p,
+.detalhes .btn {
+  margin: 5px;
+  transition: 2s;
+}
+
+.btn {
+  background-color: var(--title);
+  color: white;
+  font-family: Montserrat;
+  font-size: 12pt;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;  
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--text);
+  transition: 0.5s;
 }
 
 footer {
