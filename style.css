@@ -43,6 +43,8 @@ header {
   flex-direction: column;
 }
 
+/*Main*/
+
 .head-1 {
   display: flex;
   align-items: center;
@@ -85,6 +87,10 @@ header {
 .text h1,
 .text p{
   margin: 20px 0 0;
+}
+
+#typed {
+  width: 45%;
 }
 
 .destaques {
